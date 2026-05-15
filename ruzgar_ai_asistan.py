@@ -6,7 +6,7 @@ import numpy as np
 # --- 1. AYARLAR VE API ---
 # Secrets'tan çekmeyi dener
 try:
-    GROQ_API_KEY = st.secrets["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"]
+    GROQ_API_KEY = st.secrets["GROQ_API_KEY = "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"]
 except:
     GROQ_API_KEY = "" # Eğer hata alırsan buraya gsk_ ile başlayan kodu tırnak içine yazabilirsin
 
@@ -21,7 +21,7 @@ with st.sidebar:
     grafik_rengi = st.color_picker("Grafik Rengi Seç", "#00FFAA")
     st.markdown("---")
     st.subheader("📞 İletişim")
-    st.write("📧 **E-posta:** ruzgar.vatansever@example.com")
+    st.write("📧 **E-posta:** 2010ruzgarvatansever2010@gmail.com")
     st.write("💻 **GitHub:** github.com/rukgar1923")
     if st.button("Sistem Durumu"):
         st.toast("Tüm sistemler aktif! 🚀")
