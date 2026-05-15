@@ -6,7 +6,9 @@ import numpy as np
 # --- 1. AYARLAR VE API ---
 # Secrets'tan çekmeyi dener
 try:
-    GROQ_API_KEY = st.secrets["GROQ_API_KEY = "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"]
+   # --- 1. AYARLAR VE API ---
+GROQ_API_KEY = "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"
+client = Groq(api_key=GROQ_API_KEY)
 except:
     GROQ_API_KEY = "" # Eğer hata alırsan buraya gsk_ ile başlayan kodu tırnak içine yazabilirsin
 
