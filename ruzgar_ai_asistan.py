@@ -44,6 +44,16 @@ with tab1:
     with col2:
         st.subheader("🔢 Mühendislik Çıktıları")
         # Hesaplamalar
+        # Yer çekimi ivmesi (g = 9.81) ve Taşıma Katsayısı (Cl_max = 1.2 varsayalım)
+yercekimi = 9.81
+cl_max = 1.2
+hava_yoğunluğu = 1.225
+
+# Stall Hızı Formülü (V = sqrt( (2 * m * g) / (rho * S * Cl_max) ))
+# m = toplam_agirlik / 1000 (kg), S = kanat_alani (m2)
+m_kg = a_toplam / 1000
+v_stall = np.sqrt((2 * m_kg * yercekimi) / (hava_yoğunluğu * k_alani * cl_max))
+v_stall_kmh = v_stall * 3.6 # m/s'den km/saat'e çevrim
         itki_gereken = (a_toplam * itki_hedef) / 1000
         sure_dakika = (p_kapasite / 1000) / a_cekis * 60
         k_alani = (k_aciklik / 100) * 0.3 # Kord 30cm kabul edildi
