@@ -19,7 +19,7 @@ with st.sidebar:
     
     st.markdown("---")
     st.subheader("📞 İletişim")
-    st.write("📧 **E-posta:** ruzgar.vatansever@example.com")
+    st.write("📧 **E-posta:** 2010ruzgarvatansever2010@gmail.com")
     st.write("💻 **GitHub:** github.com/ruzgarv")
     
     if st.button("Hata Bildir"):
