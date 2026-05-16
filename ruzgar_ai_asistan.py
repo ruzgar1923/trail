@@ -22,7 +22,7 @@ with st.sidebar:
     grafik_rengi = st.color_picker("Grafik Rengi Seç", "#00FFAA")
     st.markdown("---")
     st.subheader("📞 İletişim")
-    st.write("📧 **E-posta:** ruzgarvatansevertr@gmail.com")
+    st.write("📧 **E-posta:** asim.ozkan.2010@gmail.com")
     st.write("💻 **GitHub:** github.com/rukgar1923")
     if st.button("Sistem Durumu"):
         st.toast("Tüm sistemler aktif! 🚀")
