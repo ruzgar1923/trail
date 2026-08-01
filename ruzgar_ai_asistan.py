@@ -7,9 +7,9 @@ import numpy as np
 # Secrets'tan çekmeyi dener
 try:
    # --- 1. AYARLAR VE API ---
-    GROQ_API_KEY = "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"
+    GROQ_API_KEY = "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"
 except:
-    GROQ_API_KEY = "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" # Eğer hata alırsan buraya gsk_ ile başlayan kodu tırnak içine yazabilirsin
+    GROQ_API_KEY = "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" # Eğer hata alırsan buraya gsk_ ile başlayan kodu tırnak içine yazabilirsin
 
 client = Groq(api_key=GROQ_API_KEY)
 
